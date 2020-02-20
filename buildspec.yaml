@@ -1,0 +1,28 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+    commands:
+      - echo In the Install phase...
+      - sudo yum install git
+      - sudo yum install python3-pip
+      
+  pre_build:
+    commands:
+      - echo In the pre_build phase...
+      - echo Cloning the git repo.
+      - git checkout preprod
+      
+  build:
+    commands:
+      - echo In build phase
+      - pip3 install -r requirements.txt
+      
+  post_build:
+    commands:
+      - echo Build completed on `date`
+      - echo Testing.................
+      - python3 app.py
+      
