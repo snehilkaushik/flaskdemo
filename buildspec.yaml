@@ -12,7 +12,6 @@ phases:
   pre_build:
     commands:
       - echo In the pre_build phase...
-      - echo Cloning the git repo.
       - git checkout preprod
       
   build:
@@ -24,5 +23,5 @@ phases:
     commands:
       - echo Build completed on `date`
       - echo Testing.................
-      - python3 app.py
+      - python3 test_basic.py
       
