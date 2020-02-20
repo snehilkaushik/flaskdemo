@@ -6,8 +6,8 @@ phases:
       python: 3.8
     commands:
       - echo In the Install phase...
-      - sudo yum install git
-      - sudo yum install python3-pip
+      - yum install -y git
+      - yum install -y python3-pip
       
   pre_build:
     commands:
