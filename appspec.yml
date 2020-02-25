@@ -1,5 +1,5 @@
-appspec.ymlversion: 0.0
+version: 0.0
 os: linux
 files:
   - source: /
-    destination: /var/www/python-app
+    destination: /var/python-app
