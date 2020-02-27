@@ -2,7 +2,6 @@ version: 0.0
 os: linux
 files:
   - source: /
-<<<<<<< HEAD
     destination: /home/ec2-user
 hooks:
   BeforeInstall:
@@ -16,7 +15,3 @@ hooks:
     - location: scripts/stop_server
       timeout: 300
       runas: root
-=======
-    destination: /var
-
->>>>>>> 3c980de814a4bf4edd367f568c4c2e27c480228c
