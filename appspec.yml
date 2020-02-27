@@ -1,13 +1,13 @@
 version: 0.0
 os: linux
 files:
-  - source: /
-    destination: /home/ec2-user
+   - source: /
+     destination: /home/ec2-user
 permissions:
    - object: /home/ec2-user
      pattern: "**"
      owner: root
      group: root
-     mode: 777
+     mode: 755
      type:
        - file
