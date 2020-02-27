@@ -1,5 +1,5 @@
 #!/bin/bash
-yum install epel-release 
-yum -y install python3-pip python3-devel gcc nginx
-pip3 -y install virtualenv 
-pip3 -y install gunicorn flask
+yum -y install epel-release
+yum -y install python-pip python-devel gcc nginx
+pip -y install virtualenv 
+pip -y install gunicorn flask
