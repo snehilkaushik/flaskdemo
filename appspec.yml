@@ -4,10 +4,10 @@ files:
   - source: /
     destination: /home/ec2-user
 permissions:
-   - object: /var/www/html
+   - object: /home/ec2-use
      pattern: "**"
-     owner: apache
-     group: apache
+     owner: naman
+     group: naman
      mode: 777
      type:
        - file
