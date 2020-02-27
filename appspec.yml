@@ -6,8 +6,8 @@ files:
 permissions:
    - object: /home/ec2-use
      pattern: "**"
-     owner: naman
-     group: naman
+     owner: root
+     group: root
      mode: 777
      type:
        - file
