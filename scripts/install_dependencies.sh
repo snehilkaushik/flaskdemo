@@ -6,5 +6,5 @@ pip install gunicorn flask
 
 chmod 711 /home/ec2-user
 
-cp config/flaskdemo.conf /etc/init/
-cp config/nginx.conf /etc/nginx/nginx.conf
+cp /home/ec2-user/projects/flaskdemo/config/flaskdemo.conf /etc/init/
+cp /home/ec2-user/projects/flaskdemo/config/nginx.conf /etc/nginx/nginx.conf
