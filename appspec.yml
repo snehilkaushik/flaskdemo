@@ -2,15 +2,15 @@ version: 0.0
 os: linux
 files:
    - source: /
-     destination: /home/ec2-user
-permissions:
-   - object: /home/ec2-user
-     pattern: "**"
-     owner: root
-     group: root
-     mode: 755
-     type:
-       - file
+     destination: /home/ec2-user/projects/flaskdemo
+#permissions:
+ #  - object: /home/ec2-user/projects/flaskdemo
+  #   pattern: "**"
+   #  owner: root
+    # group: root
+     #mode: 755
+     #type:
+      # - file
 hooks:
    BeforeInstall:
     - location: scripts/install_dependencies.sh
