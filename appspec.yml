@@ -2,9 +2,9 @@ version: 0.0
 os: linux
 files:
    - source: /
-     destination: /home/ec2-user/projects/flaskdemo
+     destination: /var/flaskdemo
 permissions:
-   - object: /home/ec2-user/projects/flaskdemo
+   - object: /var/flaskdemo
      pattern: "**"
      owner: root
      group: root
