@@ -10,7 +10,7 @@ permissions:
      group: nginx
      mode: 711
      type:
-       - file
+       - directory
 hooks:
    Install:
     - location: scripts/install_dependencies.sh
