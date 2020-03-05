@@ -11,6 +11,7 @@ permissions:
      mode: 755
      type:
        - directory
+       - file
 hooks:
    Install:
     - location: scripts/install_dependencies.sh
