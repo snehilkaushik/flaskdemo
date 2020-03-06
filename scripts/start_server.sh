@@ -3,4 +3,5 @@
 initctl reload-configuration
 initctl start flaskdemo
 nginx -t
-service nginx restart
+fuser -k 80/tcp
+/etc/init.d/nginx restart
