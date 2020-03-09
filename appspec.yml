@@ -1,0 +1,22 @@
+version: 0.0
+os: linux
+files:
+   - source: /
+     destination: /home/ec2-user/projects/flaskdemo
+permissions:
+   - object: /home/ec2-user/projects
+     pattern: "**"
+     owner: ec2-user
+     group: nginx
+     mode: 775
+     type:
+       - directory
+       - file
+hooks:
+   AfterInstall:
+    - location: scripts/install_dependencies.sh
+      runas: root
+    - location: scripts/start_server.sh
+      runas: root
+
+   

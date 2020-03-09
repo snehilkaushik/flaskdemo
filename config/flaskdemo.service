@@ -1,0 +1,17 @@
+[Unit]
+Description=Gunicorn instance to serve myproject
+After=network.target
+
+
+[Service]
+User=ec2-user
+Group=nginx
+
+
+Environment="PATH=/home/ec2-user/projects/flaskdemo/flaskdemo-env/bin"
+WorkingDirectory=/home/ec2-user/projects/flaskdemo
+ExecStart=/home/ec2-user/projects/flaskdemo/flaskdemo-env/bin/gunicorn --workers 3 --bind unix:flaskdemo.sock -m 007 wsgi
+
+
+[Install]
+WantedBy=multi-user.target
