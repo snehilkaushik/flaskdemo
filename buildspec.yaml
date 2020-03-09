@@ -12,7 +12,7 @@ phases:
   pre_build:
     commands:
       - echo In the pre_build phase...
-      - git checkout preprod
+      #- git checkout preprod
       
   build:
     commands:
