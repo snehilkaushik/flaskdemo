@@ -25,7 +25,7 @@ phases:
       - echo Testing.................
       - python3 test_basic.py
       
-  artifacts:
-    type: zip
-    files:
+artifacts:
+  type: zip
+  files:
       - '**/*'
